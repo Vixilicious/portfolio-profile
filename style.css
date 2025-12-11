@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  /* background: #121212; */
+  color: #efe6c6;
+}
+
+#myVideo {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.2);
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #d4af37;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+
+nav {
+  width: auto;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #151515a7;
+  box-shadow: 0px 0px 13px 2px rgba(250, 192, 0, 0.75);
+}
+
+.nav-items {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.nav-item {
+  font-size: 25px;
+  color: #b28c21;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.15s ease, transform 0.12s ease;
+}
+
+.nav-item:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  text-shadow: 0px 6px 4px rgba(197, 156, 0, 1);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: 800;
+  color: #fff;
+}
+
+.gold {
+  color: #d4af37;
+}
+
+.hero-p {
+  font-size: 23px;
+  color: #cfc7a0;
+}
+
+.portrait {
+  width: min(320px, 30vw);
+  height: auto;
+  box-shadow: 0px 1px 13px 4px rgba(150, 150, 150, 0.75);
+  padding: 30px 30px 0 30px;
+  border-radius: 10px;
+}
+
+.portrait:hover {
+  transform: translateX(-2px);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #d4af37;
+  color: #070606;
+  padding: 13px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.outline {
+  background: transparent;
+  color: #d4af37;
+  border: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+.about-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-title {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.card {
+  padding: 50px;
+  background-color: #36260a50;
+  border-radius: 20px;
+  width: 600px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 42px;
+}
+
+h2 {
+  color: #d4af37;
+  margin: 0 0 8px;
+  font-size: 40px;
+}
+
+.skill-p {
+  font-size: 30px;
+  color: #ffb300af;
+}
+
+.skills-list {
+  color: #cfc7a0;
+  font-size: 27px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.contact-p {
+  color: #cfc7a0;
+  font-size: 30px;
+  padding-bottom: 80px;
+  line-height: 44px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.my-projects-p {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 0px 17px 8px rgba(255, 187, 0, 0.312);
+  width: 500px;
+  height: 280px;
+}
+
+.project-card:hover {
+  /* transform: translateY(-6px); */
+  transition: 0.2s ease-in;
+  transform: scale(105%);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 5px rgba(255, 248, 228, 0.312);
+}
+
+.project-title {
+  position: absolute;
+  z-index: 1;
+  width: 480px;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px;
+  box-shadow: 6px 6px 10px 0px rgba(72, 39, 0, 0.75);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
+  filter: brightness(0.5);
+}
+
+footer {
+  height: 100px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(122, 122, 122, 0.316);
+  color: #cfc7a0;
+  background-color: #070606ca;
+}
